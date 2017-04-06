@@ -1,5 +1,7 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<ul>
+  {{#each links as | link |}}
+    <li><a href="{{link.url}}">{{link.label}}</a></li>
+  {{/each}}
+</ul>
+<hr>
 {{outlet}}
